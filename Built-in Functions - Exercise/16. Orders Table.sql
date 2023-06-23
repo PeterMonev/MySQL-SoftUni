@@ -1,0 +1,1 @@
+SELECT product_name, order_date, adddate(order_date, INTERVAL 3 day ) AS pay_due, adddate(order_date, INTERVAL 30 day) AS deliver_due FROM orders.orders;
